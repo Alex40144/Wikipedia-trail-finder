@@ -2,8 +2,8 @@ import urllib.request
 from bs4 import BeautifulSoup, SoupStrainer
 
 #TODO change to usesr input
-start = 'https://en.wikipedia.org/wiki/Nasa'
-target = 'https://en.wikipedia.org/wiki/NACA_airfoil'
+start = input("URL of starting page: ")
+target = input("URL of Ending page: ")
 
 max_attempts = 4
 
@@ -26,7 +26,7 @@ class WTF:
         page = 'https://en.wikipedia.org' + page
         try:
             content = urllib.request.urlopen(page)
-        except urllib.error.HTTPError:
+        except:
             print("failed to load: " + page)
             return None
 
