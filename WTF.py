@@ -1,7 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup, SoupStrainer
 
-#TODO change to usesr input
+
 start = input("URL of starting page: ")
 target = input("URL of Ending page: ")
 
